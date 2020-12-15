@@ -1,0 +1,19 @@
+1.  retrieve the list of wines from the selected country
+GET /country/:country
+
+2.  Add limit and offset to query parameter
+
+3.  GET /country/:country
+
+4.  GET /wine/:id
+
+5.  Display wine details from wine id
+
+6.  Start Express only when both databases starts
+ 
+Promise.all([
+   pool......,
+   mongoClient......]).then(() => { app.listen.....})
+   .catch( e => {... })
+
+7.  Build angular serve from express

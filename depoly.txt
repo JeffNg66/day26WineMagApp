@@ -1,0 +1,10 @@
+ng build --prod
+
+cd dist
+
+dir // copy frontend folder out
+-- 
+
+express
+app.use(express.static('....'))   // directory where the frontend folder is copied
+app.use(express.static(__dirname + '/dist/frontend'))

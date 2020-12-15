@@ -1,0 +1,3 @@
+npm init
+npm i express morgan mongodb cors body-parser
+

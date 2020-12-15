@@ -1,0 +1,7 @@
+ng g s services/httpsvc --flat --skipTests
+
+ng g c components/countries --flat --skipTests
+
+ng g c components/country --flat --skipTests
+
+ng g c components/wine --flat --skipTests

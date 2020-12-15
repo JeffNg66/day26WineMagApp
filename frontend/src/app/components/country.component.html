@@ -1,0 +1,32 @@
+<div class="row mt-3 mb-3">
+    <div class="col d-flex justify-content-between align-items-center">
+        <h3>Wine of {{ country }}</h3>
+
+        <button type="button" class="btn btn-info btn-sm" [routerLink]="['/list']">
+            Back
+        </button>
+
+    </div>
+</div>
+
+<div class="row">
+    <div class="col">
+        <div class="list-group">
+            <a *ngFor="let wine of wines " [routerLink]="['/wine', wine._id]"
+                class="list-group-item list-group-item-action">
+                <div class="row d-flex align-content-around">
+                    <div class="col-12">
+                        <span class="wine-name">{{ wine.title | uppercase }}</span>
+                    </div>
+                    <div class="col-2">
+                        <span class="wine-name">{{ wine.price | currency }}</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<!-- [routerLink]="['/country', c]" -->
+
+

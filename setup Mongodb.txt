@@ -1,0 +1,3 @@
+
+-- get from mongodb.com ... 
+mongorestore --uri mongodb+srv://jeff:<PASSWORD>@paf-cluster.hgkdz.mongodb.net --otherinformation

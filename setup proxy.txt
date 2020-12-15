@@ -1,0 +1,22 @@
+put Angular into Express - use only in development not deployment
+
+in Express
+app.use(express.static(__dirname + '/static')  ?????
+app.use(express.static(__dirname + '/frontend'))  ?????
+
+in Angular
+create a file 'proxy-config.js'
+
+module.exports = [
+{
+  context: [ '/' ],
+  target: 'http://localhost:3000',
+  secure: false,
+  logLevel: 'debug'
+}
+]
+
+secure set false as running http not https
+
+ng serve --proxy-config proxy-config.js
+
